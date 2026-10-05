@@ -25,19 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+The purpose of the game is to guess an already determined number in the given range.
+- [X] Detail which bugs you found.
+The hints were inverted - when guess was too high it would say too low, vice versa
+The attempts were not loading or being remembered correctly
+The new game button didn't work at all - scores were not reset.
+- [X] Explain what fixes you applied.
+I applied all the fixes noted above.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns "Too Low"
+3. User enters a guess of 75, and the game shows "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess or the user runs out of attempts
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -46,7 +51,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
-# ========================= X passed in 0.XXs =========================
+# ========================= 10 passed in 0.02s =========================
 ```
 
 ## 🚀 Stretch Features
